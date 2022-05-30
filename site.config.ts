@@ -21,6 +21,7 @@ export default siteConfig({
   github: 'si1k',
   // linkedin: 'alex-chaveriat',
   youtube: 'alexchaveriat',
+  newsletter: 'https://newsletter.alexchaveriat.com',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
