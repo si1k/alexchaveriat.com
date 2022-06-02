@@ -3,8 +3,8 @@ import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
-import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
+import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 
@@ -98,18 +98,6 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.youtube && (
-          <a
-            className={styles.youtube}
-            href={`https://www.youtube.com/${config.youtube}`}
-            title={`YouTube ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaYoutube />
-          </a>
-          )}
-          
         {config.newsletter && (
           <a
             className={styles.newsletter}
@@ -119,6 +107,18 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaEnvelopeOpenText />
+          </a>
+        )}
+
+        {config.youtube && (
+          <a
+            className={styles.youtube}
+            href={`https://www.youtube.com/${config.youtube}`}
+            title={`YouTube ${config.author}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaYoutube />
           </a>
         )}
       </div>
