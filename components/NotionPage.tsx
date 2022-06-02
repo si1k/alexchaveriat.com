@@ -215,7 +215,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
   const isBioPage =
-    parsePageId(block?.id) === parsePageId('8d0062776d0c4afca96eb1ace93a7538')
+    parsePageId(block?.id) === parsePageId('e9ee283cf81348929f2d60de5414f88b')
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3

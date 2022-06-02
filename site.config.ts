@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Alex Chaveriat Next.js Notion Dev',
-  domain: 'dev.alexchaveriat.com',
+  domain: 'alexchaveriat-com.vercel.app',
   author: 'Alex Chaveriat',
 
   // open graph metadata (optional)
@@ -24,8 +24,8 @@ export default siteConfig({
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: 'https://transitivebullsh.it/page-icon.png',
-  defaultPageCover: 'https://transitivebullsh.it/page-cover.jpg',
+  defaultPageIcon: 'https://alexchaveriat-com.vercel.app/page-icon.png',
+  defaultPageCover: 'https://alexchaveriat-com.vercel.app/page-cover.jpg',
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
