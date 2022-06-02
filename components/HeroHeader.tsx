@@ -109,17 +109,6 @@ export class HeroHeader extends Component<{
           break
         }
 
-        // old version which generated samples along a circle
-        // const t = random.float(2 * Math.PI)
-        // const cos = Math.cos(t)
-        // const sin = Math.sin(t)
-        // const x = w / 2 + r * cos
-        // const y = h / 2 + r * sin + yOffset
-        // const k = random.float() > 0.98 ? random.float(3, 10) : 1
-        // const dx = k * random.float(-1, 1) * random.float(50, 300) * cos
-        // const dy = k * random.float(-1, 1) * random.float(50, 300) * sin
-        // const splat = { x, y, dx, dy, color }
-        // splats.push(splat)
       }
 
       this._animation.addSplats(splats)
