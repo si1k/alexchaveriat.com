@@ -108,7 +108,6 @@ export class HeroHeader extends Component<{
           splats.push(splat)
           break
         }
-
       }
 
       this._animation.addSplats(splats)
