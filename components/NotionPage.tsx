@@ -166,6 +166,10 @@ const HeroHeader = dynamic<{ className?: string }>(
   { ssr: false }
 )
 
+const HomeHeader = dynamic<{ className?: string }>(() =>
+  import('./HomeHeader').then((m) => m.HomeHeader)
+)
+
 export const NotionPage: React.FC<types.PageProps> = ({
   site,
   recordMap,
@@ -210,8 +214,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const keys = Object.keys(recordMap?.block || {})
   const block = recordMap?.block?.[keys[0]]?.value
 
-  // const isRootPage =
-  //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
+  const isRootPage =
+    parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
   const isBioPage =
@@ -234,10 +238,16 @@ export const NotionPage: React.FC<types.PageProps> = ({
       return (
         <HeroHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
       )
-    } else {
-      return null
     }
-  }, [isBioPage])
+
+    if (isRootPage) {
+      return (
+        <HomeHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
+      )
+    }
+
+    return null
+  }, [isBioPage, isRootPage])
 
   if (router.isFallback) {
     return <Loading />
@@ -251,13 +261,13 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const title =
     tagsPage && propertyToFilterName ? `${propertyToFilterName} ${name}` : name
 
-  console.log('notion page', {
-    isDev: config.isDev,
-    title,
-    pageId,
-    rootNotionPageId: site.rootNotionPageId,
-    recordMap
-  })
+  // console.log('notion page', {
+  //   isDev: config.isDev,
+  //   title,
+  //   pageId,
+  //   rootNotionPageId: site.rootNotionPageId,
+  //   recordMap
+  // })
 
   if (!config.isServer) {
     // add important objects to the window global for easy debugging
