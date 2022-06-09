@@ -22,6 +22,10 @@ export default siteConfig({
   // linkedin: 'alex-chaveriat',
   // youtube: 'alexchaveriat',
 
+  // Custom logo - this will replace the breadcrumbs
+  // customHeaderLogo: 'https://cdn.logo.com/hotlink-ok/logo-social.png',
+  // customHeaderLogoDark: 'https://alexchaveriat-com.vercel.app/logo-dark.png',
+
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
   defaultPageIcon: 'https://alexchaveriat-com.vercel.app/page-icon.png',
