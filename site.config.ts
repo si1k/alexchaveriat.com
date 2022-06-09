@@ -23,6 +23,10 @@ export default siteConfig({
   youtube: 'alexchaveriat',
   newsletter: 'https://newsletter.alexchaveriat.com',
 
+  // Custom logo - this will replace the breadcrumbs
+  // customHeaderLogo: 'https://transitivebullsh.it/logo.png',
+  // customHeaderLogoDark: 'https://transitivebullsh.it/logo-dark.png', // optional
+
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
   defaultPageIcon: 'https://alexchaveriat-com.vercel.app/page-icon.png',
