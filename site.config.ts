@@ -23,8 +23,8 @@ export default siteConfig({
   // youtube: 'alexchaveriat',
 
   // Custom logo - this will replace the breadcrumbs
-  // customHeaderLogo: 'https://transitivebullsh.it/logo.png',
-  // customHeaderLogoDark: 'https://transitivebullsh.it/logo-dark.png', // optional
+  customHeaderLogo: 'https://alexchaveriat-com.vercel.app/logo.png',
+  customHeaderLogoDark: 'https://alexchaveriat-com.vercel.app/logo-dark.png', // optional
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
