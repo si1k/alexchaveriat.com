@@ -12,6 +12,10 @@
   --notion-header-height: 54px;
 }
 
+.dark-mode {
+  --bg-color: #141414ff;
+}
+
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
@@ -399,7 +403,7 @@
 /* Workaround for Firefox not supporting backdrop-filter yet */
 @-moz-document url-prefix() {
   .dark-mode .notion-header {
-    background: hsla(203, 8%, 20%, 0.8);
+    background: hsla(0, 0%, 8%, 0.8);
   }
 }
 
