@@ -9,12 +9,12 @@ export default siteConfig({
   rootNotionSpaceId: '7e5675fb-db63-495a-962f-33b313515351',
 
   // basic site info (required)
-  name: 'Alex Chaveriat Next.js Notion Dev',
+  name: 'Alex Chaveriat',
   domain: 'alexchaveriat-com.vercel.app',
   author: 'Alex Chaveriat',
 
   // open graph metadata (optional)
-  description: 'Alex Chaveriat Personal Site',
+  description: "Alex Chaveriat's personal site exploring the ideas, strategies, and tools that help us as hackers live happier, healthier, and more innovative lives.",
 
   // social usernames (optional)
   twitter: 'alexchaveriat',
