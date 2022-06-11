@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Alex Chaveriat',
-  domain: 'alexchaveriat-com.vercel.app',
+  domain: 'alexchaveriat.com',
   author: 'Alex Chaveriat',
 
   // open graph metadata (optional)
@@ -24,13 +24,13 @@ export default siteConfig({
   newsletter: 'https://newsletter.alexchaveriat.com',
 
   // Custom logo - this will replace the breadcrumbs
-  customHeaderLogo: 'https://alexchaveriat-com.vercel.app/logo.png',
-  customHeaderLogoDark: 'https://alexchaveriat-com.vercel.app/logo-dark.png', // optional
+  customHeaderLogo: 'https://alexchaveriat.com/logo.png',
+  customHeaderLogoDark: 'https://alexchaveriat.com/logo-dark.png', // optional
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: 'https://alexchaveriat-com.vercel.app/page-icon.png',
-  defaultPageCover: 'https://alexchaveriat-com.vercel.app/page-cover.jpg',
+  defaultPageIcon: 'https://alexchaveriat.com/page-icon.png',
+  defaultPageCover: 'https://alexchaveriat.com/page-cover.jpg',
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
