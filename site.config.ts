@@ -14,7 +14,8 @@ export default siteConfig({
   author: 'Alex Chaveriat',
 
   // open graph metadata (optional)
-  description: "Alex Chaveriat's personal site exploring the ideas, strategies, and tools that help us as hackers live happier, healthier, and more innovative lives.",
+  description:
+    "Alex Chaveriat's personal site exploring the ideas, strategies, and tools that help us as hackers live happier, healthier, and more innovative lives.",
 
   // social usernames (optional)
   twitter: 'alexchaveriat',
