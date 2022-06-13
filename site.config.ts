@@ -14,7 +14,8 @@ export default siteConfig({
   author: 'Alex Chaveriat',
 
   // open graph metadata (optional)
-  description: "Alex Chaveriat's personal site exploring the ideas, strategies, and tools that help us as hackers live happier, healthier, and more innovative lives.",
+  description:
+    "Alex Chaveriat's personal site exploring the ideas, strategies, and tools that help us as hackers live happier, healthier, and more innovative lives.",
 
   // social usernames (optional)
   twitter: 'alexchaveriat',
@@ -62,7 +63,7 @@ export default siteConfig({
     },
     {
       title: 'Contact',
-      pageId: '1254b122904c4a9e96751c5da1626c97'
+      pageId: 'e78974b1e9e64e3b9ee0c14b6370983e'
     }
   ]
 })

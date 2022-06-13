@@ -166,6 +166,10 @@ const HeroHeader = dynamic<{ className?: string }>(
   { ssr: false }
 )
 
+const ContactForm = dynamic<{ className?: string }>(() =>
+  import('./ContactForm').then((m) => m.ContactForm)
+)
+
 export const NotionPage: React.FC<types.PageProps> = ({
   site,
   recordMap,
@@ -216,6 +220,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
     block?.type === 'page' && block?.parent_table === 'collection'
   const isBioPage =
     parsePageId(block?.id) === parsePageId('e9ee283cf81348929f2d60de5414f88b')
+  const isContactPage =
+    parsePageId(block?.id) === parsePageId('e78974b1e9e64e3b9ee0c14b6370983e')
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
@@ -238,6 +244,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
       return null
     }
   }, [isBioPage])
+
+  const pageFooter = React.useMemo(() => {
+    if (isContactPage) {
+      return <ContactForm />
+    } else {
+      return null
+    }
+  }, [isContactPage])
 
   if (router.isFallback) {
     return <Loading />
@@ -322,6 +336,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         footer={footer}
         pageTitle={tagsPage && propertyToFilterName ? title : undefined}
         pageCover={pageCover}
+        pageFooter={pageFooter}
       />
 
       {/* <GitHubShareButton /> */}
