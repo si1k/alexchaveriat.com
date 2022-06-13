@@ -16,7 +16,7 @@ async function sendEmail(req: Inputs, res: any) {
     await sendgrid.send({
       to: process.env.SENDGRID_TO, // Your email where you'll receive emails
       from: process.env.SENDGRID_FROM, // your website email address here
-      subject: `[Lead from website] : ${req.body.subject}`,
+      subject: `[Message from my site] : ${req.body.subject}`,
       text: `You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email}.
       
 Name:
