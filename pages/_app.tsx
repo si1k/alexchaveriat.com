@@ -4,6 +4,9 @@ import 'styles/global.css'
 // core styles shared by all of react-notion-x (required)
 import 'react-notion-x/src/styles.css'
 
+// used for contact form
+import 'styles/form.css'
+
 // used for code syntax highlighting (optional)
 import 'prismjs/themes/prism-coy.css'
 
