@@ -166,8 +166,8 @@ const HeroHeader = dynamic<{ className?: string }>(
   { ssr: false }
 )
 
-const ContactForm = dynamic<{ className?: string }>(
-  () => import('./ContactForm').then((m) => m.ContactForm)
+const ContactForm = dynamic<{ className?: string }>(() =>
+  import('./ContactForm').then((m) => m.ContactForm)
 )
 
 export const NotionPage: React.FC<types.PageProps> = ({
@@ -247,9 +247,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const pageFooter = React.useMemo(() => {
     if (isContactPage) {
-      return (
-        <ContactForm />
-      )
+      return <ContactForm />
     } else {
       return null
     }
