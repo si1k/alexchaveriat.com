@@ -8,14 +8,18 @@
   "license": "MIT",
   "engines": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "node": ">=16"
 =======
     "node": "14.19.0"
 >>>>>>> 5b39014 (Fix for social images locking node)
+=======
+    "node": "14"
+>>>>>>> e43a39b (Downgrading node for chrome-aws-lambda issues)
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node -v && next build",
     "start": "next start",
     "deploy": "vercel deploy",
     "deps": "run-s deps:*",
