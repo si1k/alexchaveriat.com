@@ -7,11 +7,11 @@
   "repository": "transitive-bullshit/nextjs-notion-starter-kit",
   "license": "MIT",
   "engines": {
-    "node": "14.19.0"
+    "node": "14"
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node -v && next build",
     "start": "next start",
     "deploy": "vercel deploy",
     "deps": "run-s deps:*",
