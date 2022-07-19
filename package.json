@@ -9,6 +9,7 @@
   "engines": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "node": ">=16"
 =======
     "node": "14.19.0"
@@ -16,6 +17,9 @@
 =======
     "node": "14"
 >>>>>>> e43a39b (Downgrading node for chrome-aws-lambda issues)
+=======
+    "node": ">=14.17"
+>>>>>>> 6374385 (Updating node for environment)
   },
   "scripts": {
     "dev": "next dev",
@@ -37,11 +41,8 @@
     "@keyvhq/core": "^1.6.9",
     "@keyvhq/redis": "^1.6.10",
     "@react-icons/all-files": "^4.1.0",
-<<<<<<< HEAD
     "@vercel/og": "^0.0.18",
-=======
     "@sendgrid/mail": "^7.7.0",
->>>>>>> 31254a0 (Adding form and sendgrid implementation)
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "expiry-map": "^2.0.0",
