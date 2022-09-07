@@ -20,8 +20,7 @@ export const Page404: React.FC<types.PageProps> = ({ site, pageId, error }) => {
           ) : (
             pageId && (
               <p>
-                Make sure that page &quot;{pageId}&quot; is publicly
-                accessible.
+                Make sure that page &quot;{pageId}&quot; is publicly accessible.
               </p>
             )
           )}
