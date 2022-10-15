@@ -21,7 +21,8 @@ export default siteConfig({
   twitter: 'alexchaveriat',
   github: 'si1k',
   // linkedin: 'alex-chaveriat',
-  // youtube: 'alexchaveriat',
+  youtube: 'alexchaveriat',
+  newsletter: 'https://newsletter.alexchaveriat.com',
 
   // Custom logo - this will replace the breadcrumbs
   customHeaderLogo: 'https://alexchaveriat.com/logo.png',
@@ -50,10 +51,6 @@ export default siteConfig({
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
   pageUrlOverrides: null,
-
-  pageUrlAdditions: {
-    '/the-social-audio-revolution': 'c4deaf33cc924ad7a5b9f69c6ae04a01'
-  },
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
