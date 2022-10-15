@@ -21,7 +21,8 @@ export default siteConfig({
   twitter: 'alexchaveriat',
   github: 'si1k',
   // linkedin: 'alex-chaveriat',
-  // youtube: 'alexchaveriat',
+  youtube: 'alexchaveriat',
+  newsletter: 'https://newsletter.alexchaveriat.com',
 
   // Custom logo - this will replace the breadcrumbs
   customHeaderLogo: 'https://alexchaveriat.com/logo.png',
