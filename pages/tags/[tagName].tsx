@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { NotionPage } from 'components'
+import { NotionPage } from '@/components/NotionPage'
 import { domain, isDev, rootNotionPageId } from 'lib/config'
 import { resolveNotionPage } from 'lib/resolve-notion-page'
 import omit from 'lodash.omit'
