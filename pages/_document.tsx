@@ -1,5 +1,6 @@
 import * as React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
+
 import { IconContext } from '@react-icons/all-files'
 
 export default class MyDocument extends Document {
@@ -26,7 +27,6 @@ export default class MyDocument extends Document {
               sizes='96x96'
               href='/favicon-96x96.png'
             />
-
             <link rel='manifest' href='/manifest.json' />
           </Head>
 

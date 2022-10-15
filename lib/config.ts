@@ -4,15 +4,15 @@
  * This file pulls from the root "site.config.ts" as well as environment variables
  * for optional depenencies.
  */
-
 import { parsePageId } from 'notion-utils'
-import posthog from 'posthog-js'
+
+// import type posthog from 'posthog-js'
 import { getEnv, getSiteConfig } from './get-config-value'
 import { NavigationLink } from './site-config'
 import {
+  NavigationStyle,
   PageUrlOverridesInverseMap,
   PageUrlOverridesMap,
-  NavigationStyle,
   Site
 } from './types'
 
@@ -136,11 +136,15 @@ export const isServer = typeof window === 'undefined'
 
 export const port = getEnv('PORT', '3000')
 export const host = isDev ? `http://localhost:${port}` : `https://${domain}`
+export const apiHost = isDev
+  ? host
+  : `https://${process.env.VERCEL_URL || domain}`
 
 export const apiBaseUrl = `/api`
 
 export const api = {
   searchNotion: `${apiBaseUrl}/search-notion`,
+  getNotionPageInfo: `${apiBaseUrl}/notion-page-info`,
   getSocialImage: `${apiBaseUrl}/social-image`
 }
 
@@ -162,7 +166,7 @@ export const fathomConfig = fathomId
   : undefined
 
 export const posthogId = process.env.NEXT_PUBLIC_POSTHOG_ID
-export const posthogConfig: posthog.Config = {
+export const posthogConfig: { api_host: string } = {
   api_host: 'https://app.posthog.com'
 }
 

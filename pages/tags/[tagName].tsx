@@ -1,8 +1,9 @@
 import React from 'react'
-import omit from 'lodash.omit'
-import { isDev, domain, rootNotionPageId } from 'lib/config'
+
+import { NotionPage } from '@/components/NotionPage'
+import { domain, isDev, rootNotionPageId } from 'lib/config'
 import { resolveNotionPage } from 'lib/resolve-notion-page'
-import { NotionPage } from 'components'
+import omit from 'lodash.omit'
 import { ExtendedRecordMap } from 'notion-types'
 import { normalizeTitle } from 'notion-utils'
 
