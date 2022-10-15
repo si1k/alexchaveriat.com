@@ -4,15 +4,15 @@
  * This file pulls from the root "site.config.ts" as well as environment variables
  * for optional depenencies.
  */
-
 import { parsePageId } from 'notion-utils'
+
 // import type posthog from 'posthog-js'
 import { getEnv, getSiteConfig } from './get-config-value'
 import { NavigationLink } from './site-config'
 import {
+  NavigationStyle,
   PageUrlOverridesInverseMap,
   PageUrlOverridesMap,
-  NavigationStyle,
   Site
 } from './types'
 
@@ -166,7 +166,7 @@ export const fathomConfig = fathomId
   : undefined
 
 export const posthogId = process.env.NEXT_PUBLIC_POSTHOG_ID
-export const posthogConfig: {api_host: string} = {
+export const posthogConfig: { api_host: string } = {
   api_host: 'https://app.posthog.com'
 }
 
