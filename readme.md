@@ -1,8 +1,10 @@
-<p align="center">
-  <a href="https://transitivebullsh.it/nextjs-notion-starter-kit">
-    <img alt="Example article page" src="https://user-images.githubusercontent.com/552829/160132094-12875e09-41ec-450a-80fc-ae8cd488129d.jpg" width="689">
-  </a>
-</p>
+# Why I am archiving
+
+I decided to stop using this template. I am a huge fan of the template and always interested in what the developer is doing. This template just stopped meeting my needs and ultimately Notion as a CMS stopped being fun for me. I was unable to really customize it and the look felt like Notion. I ended up building a custom CMS on top of Firebase and built a frontend using NextJS and Mantine. I am not sure if I will open source the project at this point. Feel free to check it out at [https://alexchaveriat.com](https://alexchaveriat.com] 
+
+Thank you for checking this out - my absolute best to Transitive-bullshit and the amazing work he is doing on the template and the other projects he is working on!
+
+
 
 # Next.js Notion Starter Kit
 
